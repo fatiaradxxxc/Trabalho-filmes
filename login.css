@@ -1,0 +1,131 @@
+/* Definição das variáveis de cor */
+:root {
+    --color1: #BB241F; /* Vermelho escuro */
+    --color2: #913330; /* Marrom avermelhado */
+    --color3: #E60701; /* Vermelho vivo */
+    --color4: #663533; /* Marrom médio */
+    --color5: #3C2828; /* Marrom escuro */
+    --color6: #332B2B; /* Marrom muito escuro */
+}
+
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total dos elementos */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+}
+
+/* Estilo do corpo da página */
+body {
+    background-color: #a1a1a1; /* Cor de fundo cinza */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo horizontal e verticalmente */
+}
+
+/* Estilo do contêiner principal */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;     
+    max-width: 700px; /* Largura máxima do contêiner */
+    transform: translate(-50%, -50%); /* Centraliza o contêiner */
+    margin: 0px 10px 0px 1px; /* Margem ao redor do contêiner */
+    width: 100%; /* Largura total */
+    background: rgb(34, 34, 34); /* Cor de fundo escura */
+    border-radius: 5px; /* Bordas arredondadas */
+    max-height: 340px; /* Altura máxima do contêiner */
+}
+
+/* Estilo do título dentro do contêiner */
+.container .titulo {
+    height: 90px; /* Altura do título */
+    background: var(--color2); /* Cor de fundo usando variável */
+    border-radius: 5px 5px 0 0; /* Bordas arredondadas no topo */
+    color: #fff; /* Cor do texto branca */
+    font-size: 30px; /* Tamanho da fonte */
+    font-weight: 600; /* Espessura da fonte */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha o conteúdo no centro */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+}
+
+/* Estilo dos links dentro do contêiner */
+.container a {
+    color: #fff; /* Cor do texto branca */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Estilo dos links específicos dentro do formulário */
+.container > form > a {
+    text-decoration: underline !important; /* Sublinhado */
+}
+
+/* Estilo do formulário */
+.container form {
+    padding: 30px 25px 25px 25px; /* Padding interno do formulário */
+    margin: -8px 0 20px 0; /* Margem externa do formulário */
+}
+
+/* Estilo das linhas dentro do formulário */
+.container form .linha {
+    height: 45px; /* Altura da linha */
+    margin-bottom: 15px; /* Margem inferior */
+    position: relative; /* Posicionamento relativo */
+}
+
+/* Estilo dos campos de entrada dentro das linhas do formulário */
+.container form .linha input {
+    height: 100%; /* Altura total */
+    width: 100%; /* Largura total */
+    outline: none; /* Sem outline */
+    padding-left: 60px; /* Padding à esquerda */
+    border-radius: 6px; /* Bordas arredondadas */
+    border: 1px solid lightgrey; /* Borda cinza clara */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Estilo dos ícones dentro das linhas do formulário */
+.container form .linha i {
+    position: absolute;
+    width: 47px; /* Largura */
+    height: 100%; /* Altura total */
+    color: #fff; /* Cor do ícone branca */
+    font-size: 18px; /* Tamanho da fonte do ícone */
+    background: var(--color4); /* Cor de fundo usando variável */
+    border-radius: 5px 0 0 5px; /* Bordas arredondadas à esquerda */
+    display: flex;
+    align-items: center; /* Alinha o ícone verticalmente */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+}
+
+/* Estilo dos links dentro do formulário */
+.container form a {
+    color: #b1aeae; /* Cor do texto */
+    font-size: 17px; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Estilo dos links dentro do formulário quando o cursor está sobre eles */
+.container form a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o cursor */
+}
+
+/* Estilo do botão dentro do formulário */
+.container form .btn input {
+    color: #fff; /* Cor do texto branca */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: 500; /* Espessura da fonte */
+    padding-left: 0px; /* Sem padding à esquerda */
+    background: var(--color2); /* Cor de fundo usando variável */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+}
+
+/* Estilo do botão dentro do formulário quando o cursor está sobre ele */
+form .btn input:hover {
+    background: var(--color1); /* Cor de fundo ao passar o cursor */
+}

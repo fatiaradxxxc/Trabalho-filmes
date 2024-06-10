@@ -1,0 +1,135 @@
+/* Define estilos padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branca */
+    height: 100px; /* Altura do cabeçalho */
+    padding: 0 50px; /* Espaçamento interno nas laterais */
+}
+
+/* Estilo dos links dentro da navegação do cabeçalho */
+header nav a {
+    color: #fff; /* Cor do texto branca */
+}
+
+/* Estilo do botão dentro da navegação do cabeçalho */
+header nav button {
+    margin-right: 50px; /* Margem direita */
+    background: none; /* Sem fundo */
+	color: inherit; /* Herda a cor do texto */
+	border: none; /* Sem borda */
+	padding: 0; /* Sem padding */
+	font: inherit; /* Herda a fonte */
+	cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+	outline: inherit; /* Herda o outline */
+}
+
+/* Estilo da área principal */
+main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    padding: 20px 0; /* Espaçamento interno em cima e embaixo */
+    width: 100%; /* Largura total */
+    background: #a1a1a1; /* Cor de fundo */
+    margin: 0 auto; /* Centraliza o main horizontalmente */
+    min-height: calc(100vh - 140px); /* Altura mínima, ajusta considerando o header e possíveis espaçamentos */
+}
+
+/* Estilo dos formulários */
+form {
+    padding-left: 10px; /* Padding à esquerda */
+    background: white; /* Cor de fundo branca */
+    width: 30%; /* Largura de 30% do contêiner pai */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: flex; /* Flexbox para o layout interno */
+}
+
+/* Estilo dos campos de entrada dentro dos formulários */
+form input {
+    border: none; /* Sem borda */
+    outline: none; /* Sem outline */
+    flex: 1; /* Expande para preencher o espaço disponível */
+    margin-right: 50px; /* Margem direita */
+}
+
+/* Estilo dos botões dentro dos formulários */
+form button {
+    padding: 10px; /* Espaçamento interno */
+    background-color: darkred; /* Cor de fundo */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Sem borda */
+    border-radius: 0 10px 10px 0; /* Bordas arredondadas na direita */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+}
+
+/* Estilo dos botões dos formulários quando o cursor está sobre eles */
+form button:hover {
+    background-color: rgb(168, 2, 2); /* Cor de fundo ao passar o cursor */
+}
+
+/* Estilo da lista de filmes */
+.list {
+    margin-top: 10px; /* Margem superior */
+    padding: 5px; /* Padding */
+    display: flex; /* Flexbox para o layout interno */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
+    justify-content: center; /* Centraliza os itens */
+}
+
+/* Estilo dos itens da lista de filmes */
+.item {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 280px; /* Largura fixa */
+    height: 426px; /* Altura fixa */
+    background: #fff; /* Cor de fundo branca */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 15px; /* Margem em volta do item */
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir todo o elemento */
+    color: #fff; /* Cor do texto branca */
+    transition: .3s; /* Transição suave */
+}
+
+/* Estilo dos links dentro dos itens da lista de filmes */
+.item a {
+    color: #fff; /* Cor do texto branca */
+    background-color: rgb(116, 3, 3); /* Cor de fundo */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 8px 22px; /* Espaçamento interno */
+    border-radius: 3px; /* Bordas arredondadas */
+}
+
+/* Estilo dos links dentro dos itens da lista de filmes quando o cursor está sobre eles */
+.item a:hover {
+    background-color: rgb(167, 4, 4); /* Cor de fundo ao passar o cursor */
+}
+
+/* Estilo dos itens da lista de filmes quando o cursor está sobre eles */
+.item:hover {
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o item */
+    transform: scale(1.05); /* Aumenta o item ligeiramente */
+}
+
+/* Estilo das imagens dentro dos itens da lista de filmes */
+.item img {
+    width: 100%; /* Largura total */
+}
+
+/* Estilo para destacar itens com a classe 'highlight' */
+.highlight {
+    border: solid red 2px; /* Borda vermelha */
+}
